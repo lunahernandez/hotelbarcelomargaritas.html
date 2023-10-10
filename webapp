@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="description" content="Página web informativa y de reservas del Hotel Barceló Margaritas">
+    <meta name="keywords" content="Hotel Barceló Margaritas, Barceló Margaritas, Hotel Canarias">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="FINAL.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>
+        Hotel Barceló Margaritas | Trabajo
+    </title>
+
+
+    <style>
+
+        header {
+            background-color: rgb(127, 114, 213);
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        h1 {
+            color: whitesmoke;
+        }
+
+
+
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+        }
+       
+        /*Banner*/
+
+
+
+
+            *{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                box-sizing: border-box;
+            }
+            #banner{
+                position: relative;
+                width:100%;
+                height:100px;
+                overflow: hidden;
+            }
+            #clicktag{
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color:darkslateblue;
+                color: whitesmoke;
+                text-decoration: none;
+            }
+ 
+            #Cont{
+                position: relative;
+                width:30%;
+                height:300px;
+                overflow: hidden;
+                left: 1%;
+            }
+            #block{
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background-color:rgb(162, 151, 238);
+                color: whitesmoke;
+                text-decoration: none;
+                border-radius:1cm;
+            }
+
+
+
+
+            /*Barceló HOTEL GROUP*/
+            .h{
+                position: absolute;
+                left: 7%;
+                top: 15%;
+                font-size: 200;
+            }
+            .sub{
+                position: absolute;
+                left: 10%;
+                top: 50%;
+                font-size: 10;
+            }
+            /*Fin Barceló HOTEL GROUP*/
+
+
+
+
+            /*Hotel Barceló Margaritas*/
+            .name{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%); /*Para que el texto esté siempre centrado*/
+                font-size: 30;
+            }
+            /*Fin Hotel Barceló Margaritas*/
+
+
+
+
+            /*Texto en movimiento*/
+            .p{
+                position: absolute;
+                right: 10%;
+                top: 40px;
+                opacity: 0;
+                font-size: 20;
+            }
+            .p1{
+                animation: texto1 3s ease 0s both;
+            }
+            .p2{
+                animation: texto1 3s ease 3s both ;
+            }
+
+
+
+
+            @keyframes texto1 {
+                0%{
+                    opacity: 0;
+                    transform: translateY(20%);
+                }
+                20%{
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+                80%{
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+                100%{
+                    opacity: 0;
+                    transform: translateY(-20%);
+                }
+            }
+            @keyframes texto2 {
+                0%{
+                    opacity: 0;
+                    transform: translateY(20%);
+                }
+                20%{
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+                80%{
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+                100%{
+                    opacity: 0;
+                    transform: translateY(-20%);
+                }
+            }
+        /*Fin Banner*/
+       
+        #bienvenidos {
+            position: relative;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10;
+        }
+       
+        /* Formulario de reserva */
+        #reserva {
+            position: relative;
+            background-color: whitesmoke;
+            color: black;
+            text-align: center;
+            padding: 10;
+        }
+        /* Fin Formulario de reserva */
+
+
+
+
+               
+    /* Centrar carrusel de fotos */
+      /* Centra horizontalmente los elementos con la clase "slide-item" */
+      .slide-item {
+        text-align: center;
+    }
+
+
+
+
+    /* Asegúrate de que las imágenes no excedan el ancho máximo del carrusel */
+    .slide-item img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block; /* Evita que las imágenes se muestren como bloques separados */
+    }
+
+    /* Fin centrar carrusel de fotos */
+
+
+
+
+        /* Sobre nosotros */
+        #sobre-nosotros {
+            text-align: center;
+        }
+
+
+        /* Información del hotel */
+        #info-hotel {
+            text-align: center;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+
+
+        /* Contacto bloque */
+        #cont {
+            display: flex; /* Usamos flexbox para organizar elementos en una fila */
+            align-items: center; /* Centramos verticalmente los elementos */
+            width: 100%; /* Usamos el 100% del ancho disponible */
+            background-color: rgb(162, 151, 238);
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 20px; /* Añadimos un poco de espacio para mejorar la apariencia */
+        }
+
+
+
+        .c {
+            flex: 1; /* Expandimos el contenido del cuadro de contacto para ocupar el espacio restante */
+            font-family: 'Oswald', sans-serif;
+            padding: 20px; /* Añadimos espacio interno al cuadro de contacto */
+        }
+
+
+        /* Imagen del hotel */
+        #hotel-image {
+            flex: 1; /* La imagen ocupará la misma cantidad de espacio que el cuadro de contacto */
+            max-width: 50%; /* Limitamos el ancho máximo de la imagen */
+            height: auto;
+        }
+
+
+
+        /* Tabla de actividades */
+        #actividades {
+            text-align: center;
+        }
+
+
+        #tabla-actividades {
+            text-align: center;
+            background-color: white;
+            color: darkslateblue;
+            padding: 10px;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+
+        th, td {
+            border: 1px solid darkslateblue;
+            padding: 8px;
+        }
+
+
+        th {
+            background-color: rgb(162, 151, 238);
+        }
+        /* Fin Tabla de actividades */
+
+
+
+        /*Carrousel habitaciones NUEVO*/
+        .slideHabitaciones {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px; /* Ajusta la altura según tus necesidades */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slideHabitaciones-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slideHabitaciones-item {
+            flex: 0 0 100%; /* Ajusta el ancho según tus necesidades */
+            text-align: center;
+        }
+
+        .slideHabitaciones-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+        }
+
+
+        /* Estilos para los botones de navegación */
+        .slideHabitaciones-control {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+
+        .prevHabitaciones {
+            left: 20px;
+        }
+
+        .nextHabitaciones {
+            right: 20px;
+        }
+
+        /*Fin carrousel habitaciones*/
+
+
+        /*Carrousel actividades NUEVO*/
+        .slideActividades {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px; /* Ajusta la altura según tus necesidades */
+            overflow: hidden;
+            position: relative;
+        }
+
+
+        .slideActividades-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+
+        .slideActividades-item {
+            flex: 0 0 100%; /* Ajusta el ancho según tus necesidades */
+            text-align: center;
+        }
+
+
+        .slideActividades-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+        }
+
+
+        /* Estilos para los botones de navegación */
+        .slideActividades-control {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+
+
+        .prevActividades {
+            left: 20px;
+        }
+
+
+        .nextActividades {
+            right: 20px;
+        }
+
+
+        /*Fin carrousel actividades*/
+
+
+        .titleContacto, .rrss{
+            text-align: center;
+        }
+
+
+
+        .nuestrasHab, .tiposHab,.infoHab, .nuestrosServicios, .wellness, .todoIncluido, .aeropuerto, .familia, .piscinas, .crossFit{
+            text-align: center;
+        }
+
+
+        .infoWellness, .infoTodoIncluido, .infoAeropuerto, .infoFamilia, .infoPiscinas, .infoCrossfit{
+            border-color: white;
+            border-radius: 1cm;
+            text-align: center;
+        }
+
+
+        .infoHabitaciones{
+            border-color: white;
+            border-radius: 1cm;
+            text-align: center;
+            background-color: white;
+        }
+
+
+        .h4{
+            text-align: center; /* Centrar el texto horizontalmente */
+            margin-top: 50px;
+            color: rgb(162, 151, 238);
+        }
+
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background-color: darkslateblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: darkslateblue;
+        }
+        #reseñas {
+             text-align: left;
+             margin-top: 20px;
+        }
+        #reseñas div {
+            background-color: #FFF8DC;
+            border: 1px solid rgb(162, 151, 238);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        
+        /*Tipos de habitaciones*/
+        .box{
+            background-color: whitesmoke;
+            display: inline-block;
+            width: auto;
+            margin: 3%;
+            padding: 5%;
+            float: none;
+            left: 50%;
+            border-radius: 1cm;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        /*Fin Tipos de habitaciones*/
+
+
+        /*Nuestros servicios*/
+        .boxServicios{
+            background-color: whitesmoke;
+            display: inline-block;
+            width: auto;
+            margin: 3%;
+            padding: 5%;
+            float: none;
+            left: 50%;
+            border-radius: 1cm;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        /*Fin Nuestros servicios*/
+   
+        /*Inicio de cookies*/
+        #cookie-banner {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 100%; 
+            padding: 1%;
+            display: none;
+            z-index: 10; 
+            position: fixed;
+        }
+
+        #accept-cookies {
+            color: #fff;
+            border: none;
+            padding: 10px 50px;
+            cursor: pointer;
+            background-color: #4CAF50;
+        }
+        /*Fin de las cookies*/
+    </style>
+
+</head>
+
+
+
+
+<body>
+    <div id="cookie-banner">
+        <p>Este sitio web utiliza cookies para mejorar su experiencia de navegación, para mostrarle contenidos personalizados y para analizar el tráfico en nuestra web.<br>
+            <a href="https://www.barcelo.com/es-es/informacion-general/politica-cookies/" target="_blank" style="color: slateblue;">Más información sobre las cookies</a></p>
+        <button id="accept-cookies" onclick="aceptarCookies()" style="font-family: 'Oswald'; font-size: 15px;">Aceptar</button>
+    </div>
+   
+    <!--Banner-->
+    <div id="banner">
+        <a href="#" id="clicktag">
+            <!--<img id="logo" src="gloria_palace_logo.png" alt="Logo del hotel">-->
+            <p class="p p1">Buen día para vivir al máximo</p>
+            <p class="p p2">Únete a nosotros</p>
+            <h1 class="h">Barceló</h1>
+            <h2 class="sub">HOTEL Margaritas</h2>
+        </a>
+
+    </div>
+    <!--Fin Banner-->
+
+
+
+    <body>
+        <header>
+            <a href="formulario_registro.html" tar-get="_blank">Registrarse</a>
+        </header>
+    
+    </body>
+
+
+
+    <!-- Bienvenidos al hotel + reserva -->
+    <div id="bienvenidos">
+        <h2>Bienvenidos al hotel</h2>
+    </div>
+    <div id="reserva">
+        <p><strong>Reserva tu habitación:</strong></p>
+        <p>
+            Entrada: <input type="date" name="Entrada" style="font-family: 'Oswald';">
+            Salida: <input type="date" name="Salida" style="font-family: 'Oswald';">
+            <label for="people">Nº personas:</label>
+            <select id="people" name="people" style="font-family: 'Oswald';">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <label for="rooms">Nº Habitaciones:</label>
+            <select id="rooms" name="rooms" style="font-family: 'Oswald';">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <label for="people">Tipo de habitación:</label>
+            <select id="people" name="people" style="font-family: 'Oswald';">
+                <option value="1">Familiar</option>
+                <option value="2">Family Deluxe</option>
+                <option value="3">Doble</option>
+                <option value="4">Doble Uso Individual</option>
+                <option value="5">Deluxe</option>
+                <option value="6">Family Suite</option>
+            </select>
+                <!-- Botón que muestra un mensaje al hacer clic -->
+             <button id="myButton" style="font-family: 'Oswald';">Buscar</button>
+
+
+
+
+            <script>
+            // Función que se ejecuta cuando se hace clic en el botón
+            document.getElementById('myButton').addEventListener('click', function () {
+                alert('¡Has hecho una búsqueda de una o más habitaciones!');
+            });
+            </script>
+
+
+      </p>
+    </div>
+    <!-- Fin Bienvenidos al hotel + reserva -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <img src="recepcion.jpg" alt="Hotel Barceló Margaritas" width="100%">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Nuestras habitaciones-->
+<h2 class="nuestrasHab" style="margin: 30px;">Nuestras habitaciones</h1>
+
+
+
+
+    <!--Carrousel habitaciones-->
+        <!-- NUEVO -->
+<!--        <div class="slideHabitaciones">
+            <div class="slideHabitaciones-inner">
+                <div class="slideHabitaciones-item">
+                    <img src="habi.jpg">
+                </div>
+                <div class="slideHabitaciones-item">
+                    <img src="habi2.jpg">
+                </div>
+                <div class="slideHabitaciones-item">
+                    <img src="habi3.jpg">
+                </div>
+            </div>
+            <label for="slideHabitaciones-3" class="slideHabitaciones-control prevHabitaciones controlHabitaciones-1">‹</label>
+            <label for="slideHabitaciones-2" class="slideHabitaciones-control nextHabitaciones controlHabitaciones-1">›</label>
+        </div>
+
+
+
+
+   
+        <script>
+            // JavaScript para controlar el carrusel
+            const slideInnerHabitaciones = document.querySelector('.slideHabitaciones-inner');
+            const prevButtonHabitaciones = document.querySelector('.prevHabitaciones');
+            const nextButtonHabitaciones = document.querySelector('.nextHabitaciones');
+            let currentIndexHabitaciones = 0;
+   
+            nextButtonHabitaciones.addEventListener('click', () => {
+                currentIndexHabitaciones = (currentIndexHabitaciones + 1) % 3; // Cambia 3 por el número total de imágenes
+                updateSlideHabitaciones();
+            });
+   
+            prevButtonHabitaciones.addEventListener('click', () => {
+                currentIndexHabitaciones = (currentIndexHabitaciones - 1 + 3) % 3; // Cambia 3 por el número total de imágenes
+                updateSlideHabitaciones();
+            });
+   
+            function updateSlideHabitaciones() {
+                const translateXValueHabitaciones = -currentIndexHabitaciones * 100; // Cambia 100 según el ancho de las imágenes
+                slideInnerHabitaciones.style.transform = `translateX(${translateXValueHabitaciones}%)`;
+            }
+        </script>
+-->
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="habi.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="habi2.jpg" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="habi3.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+
+    <!--Fin carrousel habitaciones-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="boxServicios">
+        <h2 class="tiposHab">Familiar</h2>
+        <p class="infoHab" >
+            Modernas y luminosas habitaciones de 45 m² con balcón donde el confort está garantizado.<br>
+            Wi-Fi, Aire acondicionado, Ducha<br>
+            4 personas - Máximo 2 adultos / 2 niños<br>
+            <strong>Desde 144€/noche</strong>
+        </p>
+       
+    </div>
+   
+    <div class="box">
+        <h2 class="tiposHab">Family Deluxe</h2>
+        <p class="infoHab">
+            Amplia habitación de 45 m² con todo lo necesario para unas perfectas vacaciones en familia.<br>
+            Wi-Fi, Aire acondicionado, Ducha<br>
+            4 personas - Máximo 3 adultos / 2 niños<br>
+            <strong>Desde 153€/noche</strong>
+        </p>
+    </div>
+   
+    <div class="box">
+        <h2 class="tiposHab">Doble</h2>
+        <p class="infoHab">
+            Modernas y luminosas habitaciones decoradas con calidez para un mayor descanso y bienestar.<br>
+            Wi-Fi, Aire acondicionado, Ducha<br>
+            3 personas - Máximo 3 adultos / 1 niños<br>
+            <strong>Desde 122€/noche</strong>
+        </p>
+    </div>
+   
+    <div class="box">
+        <h2 class="tiposHab">Doble Uso Individual</h2>
+        <p class="infoHab">
+            Totalmente remodeladas, ofrecen al huésped el máximo confort, balcón y bonitas vistas.<br>
+            Wi-Fi, Aire acondicionado, Ducha<br>
+            1 personas - Máximo 1 adulto<br>
+            <strong>Desde 90€/noche</strong>
+        </p>
+    </div>
+   
+    <div class="box">
+        <h2 class="tiposHab">Deluxe</h2>
+        <p class="infoHab">
+            Amplia habitación de 45 m² con ambiente romántico perfecta para una estancia en pareja.<br>
+            Wi-Fi, Aire acondicionado, Ducha<br>
+            2 personas - Máximo 2 adultos<br>
+            <strong>Desde 138€/noche</strong>
+        </p>
+    </div>
+   
+    <div class="box">
+        <h2 class="tiposHab">Family Suite</h2>
+        <p class="infoHab">
+            Impresionantes vistas y exclusiva acomodación para unas lujosas vacaciones en familia.<br>
+            Wi-Fi, Aire acondicionado, Ducha<br>
+            6 personas - Máximo 5 adultos / 3 niños<br>
+            <strong>Desde 170€/noche</strong>
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+   
+    <!--Sobre nosotros-->
+    <div id="sobre-nosotros" class="sobre-nosotros" style="margin: 30px;">
+        <h2  style="clear: left">Sobre nosotros</h2> <!--(clear: left): quita el estilo flotante-->
+    </div>
+   
+
+
+
+
+    <!-- Agregar información del hotel -->
+    <div id="info-hotel">
+        <h3>Hotel Barceló Margaritas</h3>
+        <p>El Hotel Barceló Margaritas es un lugar paradisíaco ubicado en la hermosa isla de Gran Canaria.
+            Nuestro hotel ofrece una experiencia única para relajarse y disfrutar de unas vacaciones inolvidables.
+            Con una ubicación privilegiada, instalaciones modernas y una atención excepcional, estamos comprometidos en hacer que tu estadía sea inolvidable.</p>
+    </div>
+   
+   
+    <!-- Imagen del hotel al lado del cuadro de contacto -->
+    <div id="cont">
+        <!-- Cuadro de contacto -->
+        <div class="c">
+            <a href="#" id="block">
+                <h3 class="title">Contacto</h3>
+                <p class="email"><a href="mailto:info.amadores@gloriapalaceth.com">info.amadores@gloriapalaceth.com</a><br>Número de contacto: +34 928 78 53 90</p>
+                <!-- Agregar íconos de redes sociales con Font Awesome -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/barcelohotelsresorts/"><img class="ig" src="ig.png" alt="Instagram" height="30px" width="30px"></a>
+                    <a href="https://twitter.com/barcelohoteles"><img class="twitter" src="twitter.png" alt="Twitter" height="30px" width="30px"></a>
+                    <a href="https://www.facebook.com/barcelohotels"><img class="facebook" src="facebook.png" alt="Facebook" height="30px" width="30px"></a>
+                        <!-- Agrega una imagen como enlace a Google Maps -->
+                    <a href="https://www.bing.com/maps?osid=4dfa58ce-34b4-4b39-bfda-2026ec4c7c96&cp=27.762494~-15.585429&lvl=16&v=2&sV=2&form=S00027" target="_blank">
+                    <img src="ubi.png" alt="Google Maps" width="30px" height="30px"></a>
+                </div>
+            </a>
+        </div>
+        <!-- Imagen del hotel -->
+        <!--<img src="https://static.barcelo.com/content/dam/bhg/master/es/hoteles/spain/canarias/gran-canaria/occidental-margaritas/main-photos/hotel/BMAR_POOL_05.jpg" alt="Hotel Barceló Margaritas" id="hotel-image">-->
+    </div>
+
+
+
+
+    <!-- Fin Sobre nosotros-->
+
+
+
+
+
+
+
+
+<!--Nuestros servicios-->
+<h2 class="nuestrosServicios" style="margin: 30px;">Nuestros servicios</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Carrousel actividades-->
+        <!-- NUEVO -->
+        <div class="slideActividades">
+            <div class="slideActividades-inner">
+                <div class="slideActividades-item">
+                    <img src="piscina.jpg">
+                </div>
+                <div class="slideActividades-item">
+                    <img src="gym.jpg">
+                </div>
+                <div class="slideActividades-item">
+                    <img src="spa.jpg">
+                </div>
+            </div>
+            <label for="slideActividades-3" class="slideActividades-control prevActividades controlActividades-1">‹</label>
+            <label for="slideActividades-2" class="slideActividades-control nextActividades controlActividades-1">›</label>
+        </div>
+
+
+
+
+   
+        <script>
+            // JavaScript para controlar el carrusel
+            const slideInnerActividades = document.querySelector('.slideActividades-inner');
+            const prevButtonActividades = document.querySelector('.prevActividades');
+            const nextButtonActividades = document.querySelector('.nextActividades');
+            let currentIndexActividades = 0;
+   
+            nextButtonActividades.addEventListener('click', () => {
+                currentIndexActividades = (currentIndexActividades + 1) % 3; // Cambia 3 por el número total de imágenes
+                updateSlideActividades();
+            });
+   
+            prevButtonActividades.addEventListener('click', () => {
+                currentIndexActividades = (currentIndexActividades - 1 + 3) % 3; // Cambia 3 por el número total de imágenes
+                updateSlideActividades();
+            });
+   
+            function updateSlideActividades() {
+                const translateXValueActividades = -currentIndexActividades * 100; // Cambia 100 según el ancho de las imágenes
+                slideInnerActividades.style.transform = `translateX(${translateXValueActividades}%)`;
+            }
+        </script>
+
+
+
+    <!--Fin carrousel actividades-->
+
+
+
+<!-- Carousel -->
+<!--<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="piscina.jpg" alt="Piscina" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="gym.jpg" alt="Gym" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="spa.jpg" alt="Spa" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+-->
+    <!--Fin carrousel habitaciones-->
+
+
+
+
+
+
+
+
+    <div class="boxServicios">
+        <h2 class="piscinas">Piscinas</h2>
+        <p class="infoPiscinas">
+            El hotel cuenta con 2 piscinas, una de ellas completamente nueva,
+            familiar con 2 calles para nadar, y 2 piscinas infantiles,
+            una de ellas en el miniclub, rodeadas de hamacas, jardines y bares
+            donde tomar un refresco o aperitivo mientras se disfruta de un baño.
+        </p>
+       
+    </div>
+   
+    <div class="boxServicios">
+        <h2 class="crossFit">Margaritas Crossfit</h2>
+        <p class="infoCrossfit">
+            Margaritas CrossFit consta de 2 zonas dedicadas a pesos libres,
+            estructura de barras, anillas, wall balls y, una de estas zonas,
+            cuenta además con una zona de boxeo, barras paralelas y barras para Muscle Ups.
+        </p>
+    </div>
+   
+    <div class="boxServicios">
+        <h2 class="wellness">Wellness</h2>
+        <p class="infoWellness">
+            El Wellness Center del hotel Barceló Margaritas, completamente nuevo, 
+            ofrece un sofisticado menú de tratamientos para experimentar una excepcional
+            sensación que hará que el viaje hacia la relajación sea único.
+            Cuenta con cabinas para masajes, peluquería, sauna y una amplia 
+            oferta de tratamientos de belleza (servicios de pago en el hotel).
+
+        </p>
+    </div>
+   
+    <div class="boxServicios">
+        <h2 class="familia">Equipamiento familiar</h2>
+        <p class="infoFamilia">
+            La diversión está asegurada en el Barceló Margaritas, un resort familiar
+            que ofrece a los más pequeños (entre 4 y 12 años) un parque infantil para
+            jugar y un Miniclub Club infantil BARCY CLUB con multitud de actividades
+            guiadas por el equipo de animación, donde los niños se divertirán sin parar.
+        </p>
+    </div>
+
+
+
+
+    <div class="boxServicios">
+        <h2 class="todoIncluido">Todo Incluido Plus</h2>
+        <p class="infoTodoIncluido">
+            Para que el huésped se sienta como en casa, Barceló Margaritas
+            cuenta con el programa Todo Incluido Plus en el que ofrece todo lo
+            necesario para una experiencia de lujo.
+        </p>
+    </div>
+   
+    <div class="boxServicios">
+        <h2 class="aeropuerto">Servicio de traslado Aeropuerto</h2>
+        <p class="infoAeropuerto">
+            El hotel dispone de servicio de traslado
+            Aeropuerto - Hotel / Hotel – Aeropuerto
+            para un máximo de 4 personas.
+            <strong>Nota:</strong> Este servicio tiene un coste adicional.
+        </p>
+    </div>
+
+
+
+
+    <!--Actividades-->
+    <div id="actividades">
+        <h2 style="clear: left;">¿No sabes qué hacer en tu tiempo libre? Aquí te dejamos algunas opciones:</h2>
+    </div>
+    <div id="tabla-actividades" style="margin-left: 50px;"></div>
+        <table>
+            <tr>
+                <th>Actividad</th>
+                <th>Horario</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Spa</td>
+                <td>10:00 AM - 8:00 PM</td>
+                <td>25€ por persona</td>
+            </tr>
+            <tr>
+                <td>Crossfit</td>
+                <td>6:00 AM - 10:00 PM</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Piscina</td>
+                <td>9:00 AM - 7:00 PM</td>
+                <td>Gratis</td>
+            </tr>
+        </table>
+    </div>
+    <!--Fin Actividades-->
+   
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+    <!-- Formulario para enviar una reseña -->
+    <h3 style="text-align: center; color: rgb(162, 151, 238);">Ayúdanos a mejorar dejando tu opinión</h3>
+   
+
+
+
+
+    <form id="reseñaForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+
+
+
+
+
+
+
+
+        <label for="reseña">Reseña:</label>
+        <textarea id="reseña" rows="4" required></textarea><br>
+
+
+
+
+
+
+
+
+        <button type="submit">Enviar Reseña</button>
+    </form>
+
+
+
+
+    <!-- Fin Formulario para enviar una reseña -->
+
+
+
+
+    <!-- Mostrar reseñas existentes -->
+    <div id="reseñas">
+        <!-- Aquí se mostrarán las reseñas existentes -->
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        // Función para manejar el envío del formulario de reseñas
+        document.getElementById("reseñaForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+           
+            // Obtener los valores del formulario
+            var nombre = document.getElementById("nombre").value;
+            var reseña = document.getElementById("reseña").value;
+
+
+
+
+
+
+
+
+            // Crear un nuevo elemento para mostrar la reseña
+            var reseñaElement = document.createElement("div");
+            reseñaElement.innerHTML = "<strong>" + nombre + ":</strong> " + reseña;
+
+
+
+
+
+
+
+
+            // Agregar la reseña al contenedor de reseñas
+            document.getElementById("reseñas").appendChild(reseñaElement);
+
+
+
+
+
+
+
+
+            // Limpiar el formulario
+            document.getElementById("nombre").value = "";
+            document.getElementById("reseña").value = "";
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <!-- Mapa ubicación -->
+    <div id="reserva">
+        <h2>Mapa de Ubicación</h2>
+    </div>
+    <div style="display: flex; justify-content: absolute; align-items: absolute; height: 100vh;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.4930997730786!2d-15.57564518452056!3d27.760437182791097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40bcf535be945d%3A0x32f0c650b61b50f7!2sHotel%20Barcel%C3%B3%20Margaritas!5e0!3m2!1sen!2ses!4v1625135559397!5m2!1sen!2ses" frameborder="0" style="border: 0; width: 100%; height: 480px;" allowfullscreen="" aria-hidden="false" tabindex="980px"></iframe>
+    </div>
+    <!-- Fin del mapa ubicación -->
+
+
+
+
+    <script>
+        // Función para mostrar el banner de las cookies
+        function mostrarBannerCookies() {
+            var bannerCookies = document.getElementById("cookie-banner");
+            bannerCookies.style.display = "block";
+        }
+   
+        // Función para ocultar el banner de las cookies al hacer clic en Aceptar
+        function aceptarCookies() {
+            var bannerCookies = document.getElementById("cookie-banner");
+            bannerCookies.style.display = "none";
+        }
+   
+        // Mostrar el banner de cookies al cargar la página
+        window.addEventListener("load", mostrarBannerCookies);
+    </script>
+   
+
+
+</body>
+</html>
